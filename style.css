@@ -26,10 +26,62 @@ header {
 #rodape {
     background-color: #151530;
     width: 100%;
-    height: 200px;
-    align-items: center;
+    min-height: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 16px;
+    box-sizing: border-box;
+}
+
+#painel_rodape {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+#rodape .row {
+    row-gap: 24px;
+}
+
+#rodape .alinha_esquerda {
+    text-align: left;
+}
+
+#rodape a {
+    display: block;
+}
+
+.redes_sociais {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.redes_sociais img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+#barra_antes_copyright {
+    align-self: stretch;
+    height: 1px;
+    margin: 24px 0 16px;
+    background-color: #2e2e68;
+}
+
+#copyright {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+#copyright p {
+    margin: 0;
 }
 
 #painel_cabecalho {
@@ -123,7 +175,7 @@ p {
     height: auto;
 }
 
-#alinha_logitpo_esquerda {
+#alinha_logotipo_esquerda {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -178,4 +230,15 @@ p {
 
 .texto_card {
     text-align: center;
+}
+
+.alinha_texto_esq {
+    text-align: left;
+}
+
+.img-contato {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 8px;
 }
