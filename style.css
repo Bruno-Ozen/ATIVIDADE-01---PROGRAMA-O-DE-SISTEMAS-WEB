@@ -1,12 +1,20 @@
-#cabecalho {
+header {
     background-color: #131324;
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#cabecalho {
+    width: auto;
+    height: auto;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20px;
 }
 
 #conteudo {
@@ -56,7 +64,6 @@ p {
     color: #000000;
 }
 
-/* Deixa brancos todos os links dentro do rodapé (com ou sem href) */
 #rodape a,
 #rodape a:not([href]):not([class]),
 #rodape a:visited {
@@ -64,7 +71,6 @@ p {
     text-decoration: none;
 }
 
-/* Efeito ao passar o mouse */
 #rodape a:hover,
 #rodape a:not([href]):not([class]):hover {
     color: #cbd5e1;
@@ -97,4 +103,27 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.btn-ghost:hover {
+    background-color: #0d1eb8;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+#logotipo_educa_web {
+    width: 200px;
+    height: auto;
+}
+
+#alinha_logitpo_esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
